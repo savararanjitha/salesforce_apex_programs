@@ -1,0 +1,20 @@
+Integer oddsum = 0;
+List<Integer> oddnum = new List<Integer>();
+Integer i = 1;
+
+while (i <= 20) {
+    if (Math.mod(i, 2) != 0) {
+        oddnum.add(i);
+    }
+    i++;
+}
+i = 1;
+while (i <= oddnum.size()){
+    if (Math.mod(i, 2) == 0) {
+        oddsum = oddsum + oddnum[i-1];
+        system.debug( 'even position oddsum :'  + oddsum);
+    }
+    i++;
+}
+system.debug('total even position oddsum :  ' + oddsum);
+
