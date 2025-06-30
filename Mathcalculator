@@ -1,0 +1,28 @@
+public class Mathcalculator {
+    private static integer sum;
+    private static integer add(integer num1,integer num2){
+      sum= num1 + num2; 
+        return sum;
+    }
+    private static integer multiple;
+    private static integer multiply(integer num1,integer num2){
+       multiple= num1 * num2;  
+       return multiple;
+    }
+    private static void printoutput(){
+        system.debug('summation: ' + sum);
+        system.debug('product: ' + multiple);
+    }
+    
+    public void domath(integer num1,integer num2){
+        add(num1,num2);
+        multiply(num1,num2);
+        printoutput();
+    }
+    
+}
+
+
+invoking apex class
+Mathcalculator mc = new Mathcalculator();
+mc.doMath(4,7);  
